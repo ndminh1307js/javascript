@@ -5,38 +5,32 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Javascript For Professional Developers</title>
+
 	<style>
-		html,
 		body {
-			margin: 0;
-			padding: 0;
+			position: relative;
+			height: 100vh;
 		}
 
-		#content {
-			margin-top: 200px;
-			margin-left: 100px;
-			padding: 20px;
-			border: 20px solid black;
-			width: 200px;
-			height: 100px;
-			overflow-x: scroll;
-			overflow-y: scroll;
+		#cursor {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 2rem;
+			height: 2rem;
+			background-color: transparent;
+			border: 2px solid rgba(0, 0, 0, 0.4);
+			border-radius: 50%;
+			transition: position 0.5s linear;
 		}
 	</style>
 </head>
 
 <body>
-	<div id="content">
-		<p>This is long content ever in the world. Do you see it?</p>
-		<p>This is long content ever in the world. Do you see it?</p>
-		<p>This is long content ever in the world. Do you see it?</p>
-		<p>This is long content ever in the world. Do you see it?</p>
-		<p>This is long content ever in the world. Do you see it?</p>
-		<p>This is long content ever in the world. Do you see it?</p>
-		<p>This is long content ever in the world. Do you see it?</p>
-		<p>This is long content ever in the world. Do you see it?</p>
-	</div>
-	<button id="scrollToBottom">Scroll</button>
+	<button id="click">Click Me!</button>
+	<div id="cursor"></div>
+	<div id="content"></div>
 	<!--Scripts-->
 	<script src="src/app.js"></script>
 </body>
